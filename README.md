@@ -88,10 +88,12 @@ Here in the project only Hand X-ray images were used for simplicity.
 <p align="center">
   <span>
     <img src="images/image.png" alt="Original Image" width="400">
-  </span
+  </span>
     <br>
     <em>Fig 3: Feature Extraction </em>
 </p>
+
+
 - **Classification**:
    - Features are normalized using StandardScaler.
    - The Random Forest Classifier predicts whether an X-ray shows a fracture.
@@ -99,13 +101,14 @@ Here in the project only Hand X-ray images were used for simplicity.
 - **GUI**:
    - Users can upload X-ray images to get instant predictions.
      
-<p align="center">
+  <p align="center">
   <span>
-    <img src="images/image.png" alt="Original Image" width="400">
-  </span
+    <img src="images/GUI.png" alt="Original Image" width="400">
+  </span>
     <br>
-    <em>Fig 3: Feature Extraction </em>
-</p>
+    <em>Fig 4: GUI </em>
+</p>   
+
 ## Installation
 
 - **Clone the repository**:
