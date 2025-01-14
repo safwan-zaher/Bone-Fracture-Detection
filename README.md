@@ -40,21 +40,72 @@ Here in the project only Hand X-ray images were used for simplicity.
    - Median filtering removes "salt and pepper" noise.
    - Gaussian filtering smooths the image.
    - CLAHE enhances contrast for improved visibility of details.
+   - The following diagram shows how the preprocessing of the system is done:
+
+<p align="center">
+  <span>
+    <img src="images/1_original.png" alt="Original Image" width="200">
+  </span>
+  <span>
+    <img src="images/2_median.png" alt="Median Filter" width="200">
+  </span>
+  <span>
+    <img src="images/3_gaussian.png" alt="Gaussian Filter" width="200">
+  </span>
+  <span>
+    <img src="images/4_CLAHE.png" alt="CLAHE" width="200">
+  </span>
+    <br>
+    <em>Fig 1: Original Image , Median Filter Applied, Gaussian Filter Applied, CLAHE Applied</em>
+</p>
 
 - **Edge Detection**:
    - Sobel filters compute gradient magnitude and direction.
    - Canny edge detection identifies strong edges with refinement.
+    - The following diagram shows edge detection of the system is done:
+
+<p align="center">
+  <span>
+    <img src="images/5_sobel.png" alt="Original Image" width="200">
+  </span>
+  <span>
+    <img src="images/6_nonmax.png" alt="Median Filter" width="200">
+  </span>
+  <span>
+    <img src="images/7_thresholding.png" alt="Gaussian Filter" width="200">
+  </span>
+  <span>
+    <img src="images/8_canny.png" alt="Gaussian Filter" width="200">
+  </span>
+    <br>
+    <em>Fig 2: Canny Edge Detection Technique </em>
+</p>
 
 - **Feature Extraction**:
    - GLCM extracts five key texture features (Correlation, Energy, Homogeneity, Contrast, Dissimilarity).
-
+   - CSV file
+  
+<p align="center">
+  <span>
+    <img src="images/image.png" alt="Original Image" width="400">
+  </span
+    <br>
+    <em>Fig 3: Feature Extraction </em>
+</p>
 - **Classification**:
    - Features are normalized using StandardScaler.
    - The Random Forest Classifier predicts whether an X-ray shows a fracture.
 
 - **GUI**:
    - Users can upload X-ray images to get instant predictions.
-
+     
+<p align="center">
+  <span>
+    <img src="images/image.png" alt="Original Image" width="400">
+  </span
+    <br>
+    <em>Fig 3: Feature Extraction </em>
+</p>
 ## Installation
 
 - **Clone the repository**:
